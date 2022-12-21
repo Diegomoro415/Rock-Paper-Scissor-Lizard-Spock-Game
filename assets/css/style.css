@@ -1,0 +1,25 @@
+/*  google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Rubik+Vinyl&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    background-color: #664C52;
+    color: #F4EFDB;
+    padding: 15px;
+    font-size: 30px;
+    font-family: 'Rubik Vinyl', cursive;
+    letter-spacing: 3px;
+    border-radius: 10px;
+}
+.container {
+    background-color: #F4EFDB;
+    box-shadow: 0 0 3px 3px rgba(red, green, blue, alpha);
+}
