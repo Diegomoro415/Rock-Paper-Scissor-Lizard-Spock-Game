@@ -11,11 +11,12 @@ body {
     align-items: center;
 }
 h1 {
-    background-color: #664C52;
+    background-color: #442e33;
     color: #F4EFDB;
     padding: 15px;
     font-size: 30px;
     font-family: 'Rubik Vinyl', cursive;
+    font-weight: 900;
     letter-spacing: 3px;
     border-radius: 10px;
 }
