@@ -9,6 +9,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Asap', sans-serif;
 }
 h1 {
     background-color: #442e33;
@@ -22,9 +25,9 @@ h1 {
 }
 .container {
     position: absolute;
-    
+    width: 55%;
+    min-height: 680px;
     background-color: #F4EFDB;
-    box-shadow: 0 0 3px 3px rgba(red, green, blue, alpha);
 }
 .pack {
     position: relative;
@@ -34,10 +37,10 @@ h1 {
     width: 100%;
     padding: 20px 0;
 }
-.players{
+.player{
     position: absolute;
     text-align: center;
-    width: 20%;
+    width: 25%;
     font-size: 28px;
     font-weight: 600;
     color: #442e33;
@@ -46,7 +49,6 @@ h1 {
 }
 .blue {
     background-color: #5AD0E8;
-    width: fit-content;
     left: 7%;
 }
 
@@ -62,15 +64,14 @@ h1 {
     width: 200px;
     height: 76px;
     background-color: whitesmoke;
-    border: groove;
     border-radius: 10px;
     font-family: 'Asap', sans-serif;
-    font-size: 34px;
+    font-size: 48px;
     font-weight: bold;
     letter-spacing: 7px;
 }
 .display {
-    height: 50%;
+    height: 200px;
     background-image: url(/assets/images/background.webp);
     background-size: cover;
     background-repeat: no-repeat;
@@ -122,7 +123,7 @@ label {
     cursor: pointer;
     margin-right: 8px;
 }
-.btn {
+label button {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -130,12 +131,12 @@ label {
     transition: .3s;
 }
 
-.btn:hover{
+label button:hover{
     background-color: #442e33;
     
 }
 
-.btn:hover > img {
+label button:hover > img {
     max-width: 80%;
     
 }
@@ -170,7 +171,7 @@ label {
     z-index: 999;
 }
 .final-screen h3{
-    color: #F4EFDB;
+    color: #442e33;
     font-size: 35px;
     text-transform: uppercase;
 }
@@ -184,7 +185,7 @@ label {
     width: 80%;
     border-radius: 10px;
     border: none;
-    font-size: 1rem;
+    font-size: 16px;
     font-family: 'Asap', sans-serif;;
     cursor: pointer;
     text-transform: uppercase;
@@ -196,4 +197,6 @@ label {
     align-items: center;
     justify-content: center;
 }
-
+.none {
+    display: none;
+}
