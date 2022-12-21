@@ -22,6 +22,7 @@ h1 {
 }
 .container {
     position: absolute;
+    
     background-color: #F4EFDB;
     box-shadow: 0 0 3px 3px rgba(red, green, blue, alpha);
 }
@@ -33,7 +34,7 @@ h1 {
     width: 100%;
     padding: 20px 0;
 }
-#players{
+.players{
     position: absolute;
     text-align: center;
     width: 20%;
@@ -75,6 +76,17 @@ h1 {
     background-repeat: no-repeat;
     background-position: center;
     max-width: 80%;
+}
+.move-chose div {
+    width: 50%;
+    text-align: center;
+    min-height: 80px;
+}
+.move-chose div img {
+    max-width: 80%;
+}
+.reverse {
+    transform: scaleX(-1);
 }
 h2 {
     text-align: center;
@@ -146,3 +158,42 @@ label {
     background-color: #442e33;
     color: #F4EFDB;
 }
+#winner {
+    background-color: #442e33;
+    background: #F4EFDB;
+    z-index: 999;
+}
+
+#loser {
+    background-color: #442e33;
+    background: #F4EFDB;
+    z-index: 999;
+}
+.final-screen h3{
+    color: #F4EFDB;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.final-screen span{
+    font-size: 32px;
+}
+
+.final-screen button {
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    font-family: 'Asap', sans-serif;;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
