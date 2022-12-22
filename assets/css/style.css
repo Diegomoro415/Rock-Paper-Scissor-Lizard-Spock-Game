@@ -28,7 +28,7 @@ h1 {
 }
 .container {
     position: absolute;
-    width: 55%;
+    width: 65%;
     min-height: 680px;
     background-color: #F4EFDB;
     border: 4px solid #442e33;
@@ -77,7 +77,7 @@ h1 {
     letter-spacing: 7px;
 }
 .display {
-    height: 210px;
+    height: 200px;
     margin-left: 2.5%;
     background-image: url(/assets/images/background.webp);
     background-size: cover;
@@ -93,10 +93,10 @@ h1 {
 .move-chose div {
     width: 100%;
     text-align: center;
-    min-height: 80px;
+    min-height: 70px;
 }
 .move-chose div img {
-    max-width: 90%;
+    max-width: 100%;
 }
 .reverse {
     transform: scaleX(-1);
@@ -104,7 +104,7 @@ h1 {
 h2 {
     font-family: 'Asap', sans-serif;
     text-align: center;
-    font-size: 32px;
+    font-size: 30px;
     padding: 30px 0;
     text-transform: capitalize;
 }
@@ -119,7 +119,7 @@ h2 {
     max-width: 100%;
     transition: 0.5s;
 }
-label {
+.choices {
     position: relative;
 }
 [type=radio]{
@@ -137,20 +137,20 @@ label {
     cursor: pointer;
     margin-right: 8px;
 }
-label button {
-    width: 100px;
-    height: 100px;
+.choices button {
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     cursor: pointer;
     transition: .3s;
 }
 
-label button:hover{
+.choices button:hover{
     background-color: #442e33;
     
 }
 
-label button:hover > img {
+.choices button:hover > img {
     max-width: 80%;
     
 }
@@ -213,4 +213,52 @@ label button:hover > img {
 }
 .none {
     display: none;
+}
+@media screen and (max-width:920px){
+    
+    h1 {
+        font-size: 25px;
+    }
+    .container {
+        width: 100%;
+        height: auto;
+    }
+    .pack {
+        padding: 10px 0;
+    }
+    .player {
+        font-size: 18px;
+        padding: 5px;
+        width: 33%;
+    }
+    .blue {
+        left: 1%;
+        top: 30%;
+    }
+    .red {
+        right: 1%;
+        top: 30%;
+    }
+    .score {
+        font-size: 33px;
+        letter-spacing: 5px;
+    }
+    .display {
+        height: 150px;
+    }
+    h2 {
+        font-size: 24px;
+        padding: 15px 0;
+    }
+    .choices button {
+        width: 60px;
+        height: 60px;
+    }
+    .choices button:hover > img {
+        max-width: 100%;
+    }
+    .btn-play, .btn-play:disabled:hover {
+        position: relative;
+        margin-top: 20px;
+    }
 }
