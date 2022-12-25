@@ -122,6 +122,9 @@ h2 {
 .choices {
     position: relative;
 }
+label {
+    display: none;
+}
 [type=radio]{
     position: absolute;
     left: 0;
@@ -143,18 +146,15 @@ h2 {
     border-radius: 50%;
     cursor: pointer;
     transition: .3s;
-}
-
+}    
 .choices button:hover{
-    background-color: #442e33;
-    
+   background-color: #442e33;
 }
 
 .choices button:hover > img {
-    max-width: 80%;
+    max-width: 80%; 
     
 }
-
 .btn-play, .btn-play:disabled:hover {
     width: 90%;
     padding: 10px;
@@ -169,7 +169,6 @@ h2 {
     cursor: pointer;
     transition: .3s;
 }
-
 .btn-play:hover{
     background-color: whitesmoke;
     color: #442e33;
@@ -179,7 +178,6 @@ h2 {
     background: #F4EFDB;
     z-index: 999;
 }
-
 #loser {
     background-color: #442e33;
     background: #F4EFDB;
@@ -190,11 +188,9 @@ h2 {
     font-size: 35px;
     text-transform: uppercase;
 }
-
 .final-screen span{
     font-size: 32px;
 }
-
 .final-screen button {
     padding: 10px;
     width: 80%;
