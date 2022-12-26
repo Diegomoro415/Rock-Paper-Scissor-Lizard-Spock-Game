@@ -12,3 +12,9 @@ const scoreBoard = document.getElementById("score-board");
 const play = document.getElementById("playing");
 const winner = document.getElementById("winner");
 const loser = document.getElementById("loser");
+
+// Calls startGame and playPc function after user's click
+playing.addEventListener("click", () => {
+    startGame()
+    playPc()
+})
