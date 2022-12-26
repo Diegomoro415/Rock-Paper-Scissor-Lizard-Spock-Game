@@ -63,7 +63,7 @@ function checkResult() {
     } else if (player1 == 'spock') {
         win = computer == 'scissor' ? 1 : -1
     }
-    
+
     if (player1 == computer) {
     } else if (player1 == 'rock') {
         win = computer == 'lizard' ? 1 : -1
@@ -107,5 +107,28 @@ function checkResult() {
     //set time 1 second to the next try
     setTimeout(()=>{
         play.disabled = false
+        clear()
     },1000)
+
+    /**
+     * cleans displayComputer and displayPlayer1
+     */
+    function clear(){
+        displayComputer.innerHTML=""
+        displayPlayer1.innerHTML = ""
+    }
+    
+    /**
+     * sets display and score to 0 to start a new game
+     */
+    function newGame(){
+        scoreBoard.innerHTML = "0:0"
+        scorePc = 0
+        scoreUser = 0
+        winner.classList.add('none')
+        winner.classList.remove('center')
+        loser.classList.add('none')
+        loser.classList.remove('center')
+        startGame()
+    }
 }
