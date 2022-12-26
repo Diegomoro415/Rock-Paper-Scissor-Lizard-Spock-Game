@@ -28,3 +28,16 @@ function startGame() {
     displayPlayer1.innerHTML = "<img src='assets/images/" + player1 + ".png'>"
     displayComputer.innerHTML = ""
 }
+/**
+ * Displays a random value for computer
+ */
+function playPc() {
+    //array with possible choices
+    let opt = ['rock', 'paper', 'scissor' , 'lizard' , 'spock'];
+    //gets a random choice for computar
+    let num = Math.floor(Math.random() * 5);
+    //displays the value of computer concatenated with the image's address
+    computer = opt[num]
+    displayComputer.innerHTML = "<img src='assets/images/" + computer + ".png'>"
+    checkResult()
+}
