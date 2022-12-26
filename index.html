@@ -11,14 +11,18 @@
     <title>Rock Paper Scissor Lizard Spock Game</title>
 </head>
 <body>
-    <div class="container">
+    <div class="game-container">
         <h1>Rock Paper Scissor Lizard Spock Game</h1>
-        <div class="pack">
+        <div class="container">
             <div class="player blue">Player1</div>
             <div class="player red">Computer</div>
-            <div id="score-board" class="score">0:0</div>
+            <div id="score-board" class="score">
+                <span class="score-p1">0</span>
+                <h4> : </h4>
+                <span class="score-pc">0</span>
+            </div>
         </div> 
-        <div class="pack display move-chose">
+        <div class="container display move-chose">
             <div id="player1">
                 <img src="/assets/images/rock.png" alt="rock">
             </div>
@@ -52,16 +56,16 @@
                 <button><img src="assets/images/spock.png" alt="spock"></button>
             </div>
         </div>
-        <div class="pack">
-            <button id="play" class="btn-play">Play</button>
+        <div class="container">
+            <button id="playing" class="btn-play">Play</button>
         </div>
     </div>
-    <div id="winner" class="pack final-screen none">
+    <div id="winner" class="container final-screen none">
         <span>🏆🏆🏆</span>
         <h3>You Won!!!</h3>
         <button>Play Again!</button>
     </div>
-    <div id="loser" class="pack final-screen none">
+    <div id="loser" class="container final-screen none">
         <span>😭😭😭</span>
         <h3>You Lose!</h3>
         <button>Play Again</button>
