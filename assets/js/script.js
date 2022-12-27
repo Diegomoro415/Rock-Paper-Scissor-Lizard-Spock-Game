@@ -110,8 +110,8 @@ function checkResult() {
      * sets display and score to 0 to start a new game
      */
         function newGame(){
-        scorePc = "0";
-        scoreUser = "0";
+        scorePc = 0;
+        scoreUser = 0;
         winner.classList.add('none');
         winner.classList.remove('center');
         loser.classList.add('none');

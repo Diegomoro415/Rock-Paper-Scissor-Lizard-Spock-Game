@@ -12,12 +12,15 @@
 </head>
 <body>
     <div class="game-container">
+        <!--game title-->
         <h1>Rock Paper Scissor Lizard Spock Game</h1>
+        <!--Score-->
         <div class="container">
             <div class="player blue">Player1</div>
             <div class="player red">Computer</div>
             <div id="score-board" class="score">0:0</div>
         </div> 
+        <!--Display player and computer-->
         <div class="container display move-chose">
             <div id="player1">
                 <img src="/assets/images/rock.png" alt="rock">
@@ -25,6 +28,7 @@
             <div id="computer" class="reverse"></div>
         </div>
         <h2>Choose your move</h2>
+        <!--buttons with the moviments the user can choose-->
         <div class="moves">
             <div class="choices">
                 <input id="rock" type="radio"  onclick="reset()" name="play" value="rock" checked>
@@ -52,20 +56,24 @@
                 <button><img src="assets/images/spock.png" alt="spock"></button>
             </div>
         </div>
+        <!--Button to play-->
         <div class="container">
             <button id="playing" class="btn-play">Play</button>
         </div>
     </div>
+    <!--Final screen if user win-->
     <div id="winner" class="container final-screen none">
         <span>🏆🏆🏆</span>
         <h3>You Won!!!</h3>
         <button onclick="newGame()" class="play-again">Play Again!</button>
     </div>
+    <!--Final screen if user lose-->
     <div id="loser" class="container final-screen none">
         <span>😭😭😭</span>
         <h3>You Lose!</h3>
         <button onclick="newGame()" class="play-again">Play Again</button>
     </div>
+    <!--link Script-->
     <script src="/assets/js/script.js"></script>
 </body>
 </html>
