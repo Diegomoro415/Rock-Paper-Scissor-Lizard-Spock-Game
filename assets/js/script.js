@@ -52,29 +52,17 @@ function checkResult() {
      //checks player 1 choice and computer choice to determinate who wins
      // 1 win, -1 lose and 0 game is a tie
     if (player1 == computer) {
-    } else if (player1 == 'rock') {
-        win = computer == 'scissor' ? 1 : -1
-    } else if (player1 == 'paper') {
-        win = computer == 'rock' ? 1 : -1
-    } else if (player1 == 'scissor') {
-        win = computer == 'paper' ? 1 : -1
-    } else if (player1 == 'lizard') {
-        win = computer == 'paper' ? 1 : -1
-    } else if (player1 == 'spock') {
-        win = computer == 'scissor' ? 1 : -1
-    }
 
-    if (player1 == computer) {
     } else if (player1 == 'rock') {
-        win = computer == 'lizard' ? 1 : -1
+        win = computer == 'scissor' || computer == 'lizard' ? 1 : -1
     } else if (player1 == 'paper') {
-        win = computer == 'spock' ? 1 : -1
+        win = computer == 'rock' || computer == 'spock' ? 1 : -1
     } else if (player1 == 'scissor') {
-        win = computer == 'lizard' ? 1 : -1
+        win = computer == 'paper' || computer == 'lizard' ? 1 : -1
     } else if (player1 == 'lizard') {
-        win = computer == 'spock' ? 1 : -1
+        win = computer == 'paper' || 'spock' ? 1 : -1
     } else if (player1 == 'spock') {
-        win = computer == 'rock' ? 1 : -1
+        win = computer == 'scissor' || computer == ' rock' ? 1 : -1
     }
 
     // if win bigger than 0 (a tie game) increase by 1 scoreUser
