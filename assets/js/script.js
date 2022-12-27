@@ -97,7 +97,7 @@ function checkResult() {
         play.disabled = false
         clear()
     },1000)
-
+}
     /**
      * cleans displayComputer and displayPlayer1
      */
@@ -109,14 +109,14 @@ function checkResult() {
     /**
      * sets display and score to 0 to start a new game
      */
-    function newGame(){
-        scoreBoard.innerHTML = "0:0"
+        function newGame(){
+        playAgain = document.getElementsByClassName("play-again");
         scorePc = 0
         scoreUser = 0
         winner.classList.add('none')
         winner.classList.remove('center')
         loser.classList.add('none')
         loser.classList.remove('center')
-        startGame()
+        
     }
-}
+    
