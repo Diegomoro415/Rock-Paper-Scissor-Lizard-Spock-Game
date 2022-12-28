@@ -84,7 +84,7 @@ h1 {
 .display {
     height: 200px;
     margin-left: 2.5%;
-    background-image: url(/assets/images/background.webp);
+    background-image: url(https://diegomoro415.github.io/Rock-Paper-Scissor-Lizard-Spock-Game//assets/images/background.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
