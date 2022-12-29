@@ -144,6 +144,9 @@ h2 {
     cursor: pointer;
     margin-right: 8px;
 }
+label {
+    display: none;
+}
 .choices button {
     width: 110px;
     height: 110px;

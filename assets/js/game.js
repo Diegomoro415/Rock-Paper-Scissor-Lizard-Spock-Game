@@ -25,7 +25,7 @@ function startGame() {
     //collect value from input name=play that has been selected
     //displays the value of player1 concatenated with the image's address
     player1 = document.querySelector('input[name="play"]:checked').value;
-    displayPlayer1.innerHTML = "<img src='assets/images/" + player1 + ".png'>";
+    displayPlayer1.innerHTML = "https://diegomoro415.github.io/Rock-Paper-Scissor-Lizard-Spock-Game<img src='assets/images/" + player1 + ".png'>";
     displayComputer.innerHTML = "";
 }
 /**
