@@ -38,7 +38,7 @@ function playPc() {
     let num = Math.floor(Math.random() * 5);
     //displays the value of computer concatenated with the image's address
     computer = opt[num];
-    displayComputer.innerHTML = "<img src='assets/images/" + computer + ".png'>";
+    displayComputer.innerHTML = "<img src='https://diegomoro415.github.io/Rock-Paper-Scissor-Lizard-Spock-Game/assets/images/" + computer + ".png'>";
     checkResult();
 }
 /**

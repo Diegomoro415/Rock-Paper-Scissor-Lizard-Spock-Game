@@ -128,9 +128,7 @@ h2 {
 .choices {
     position: relative;
 }
-label {
-    display: none;
-}
+
 [type=radio]{
     position: absolute;
     left: 0;
