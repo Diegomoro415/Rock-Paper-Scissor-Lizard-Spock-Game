@@ -226,6 +226,38 @@ label {
 .none {
     display: none;
 }
+/*Quiz Game*/
+.quiz-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Asap', sans-serif;
+    background-color: #664C52 ;
+    height: 100%;
+    flex-direction: column;
+    gap: 5px;
+}
+.quiz-game h1 {
+    font-size: 28px;
+}
+.quiz-game  main {
+
+    background-color: #F4EFDB;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#quiz-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
 /*set media querry*/
 @media screen and (max-width:920px){
     
