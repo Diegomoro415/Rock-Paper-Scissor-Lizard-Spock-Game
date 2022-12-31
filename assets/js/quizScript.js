@@ -7,6 +7,7 @@ var endQuiz = document.getElementById("end-quiz");
 var endQuizScreen = document.getElementById("end-quiz-screen");
 var quizButton = document.getElementById("btn-end-screen");
 
-let 
+import questions from "./questions.js";
+
 
 var shuffedQuestions;
