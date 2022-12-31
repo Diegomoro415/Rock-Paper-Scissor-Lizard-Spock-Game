@@ -9,6 +9,13 @@ var quizButton = document.getElementById("btn-end-screen");
 
 var shuffedQuestions;
 
+/**
+ * shuffleQuestions randomly shuffles the questions shuffledQuestions
+ */
+function shuffleQuestions(){
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+  }
+
 import questions from "./questions.js";
 //Displyas number of current question and number of correct answers
 let currentQuestion = 0;
@@ -41,4 +48,33 @@ function loadQuestions() {
       });
     }
     loadQuestions();
+    shuffedQuestions();
+    /**
+     * This function checks data correct and defines when the game is over
+     * if statement data correct is equal to true increase correctAnser 
+     * if statement currentQuestion = or bigger than questions length the game is over
+     * and it calls finish function
+     */
+    function nextQuestion(e) {
+        if (e.target.getAttibute("data-correct") === "true")
+        {
+            correctAnswers++;
+        }
+        if (currentQuestion < questions.length -1) {
+            currentQuestion++;
+            loadQuestions();
+            shuffedQuestions();
+        } else {
+            finish();
+        }
+    }
+    /**
+     * This function is call when there are no more questions
+     * displyas a end screen with total of question the users made right
+     */
+    function finish () {
+        endQuizScreen.innerHTML = `You made ${correctAnswers} of ${questions.length}`;
+        quizContainer.style.display = "none";
+        endQuiz.style.display = "flex";
+    }
 
