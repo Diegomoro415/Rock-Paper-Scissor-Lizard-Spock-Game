@@ -5,9 +5,9 @@ var numQuestion = document.getElementById("num-question");
 var quizContainer = document.getElementById("quiz-container");
 var endQuiz = document.getElementById("end-quiz");
 var endQuizScreen = document.getElementById("end-quiz-screen");
-var quizButton = document.getElementById("btn-end-screen");
 
-var shuffedQuestions;
+
+var shuffledQuestions;
 
 /**
  * shuffleQuestions randomly shuffles the questions shuffledQuestions
@@ -48,7 +48,7 @@ function loadQuestions() {
       });
     }
     loadQuestions();
-    shuffedQuestions();
+    shuffleQuestions();
     /**
      * This function checks data correct and defines when the game is over
      * if statement data correct is equal to true increase correctAnser 
@@ -63,7 +63,7 @@ function loadQuestions() {
         if (currentQuestion < questions.length -1) {
             currentQuestion++;
             loadQuestions();
-            shuffedQuestions();
+            shuffleQuestions();
         } else {
             finish();
         }
