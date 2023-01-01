@@ -288,6 +288,46 @@ gap: 10px;
 #end-quiz button {
 text-align: center;
 }
+/* feedback page */
+.feedback {
+    background-color: #F4EFDB;
+}
+.form-container {
+    height: 600px;
+    width: 600px;
+    margin: 50px auto;
+}
+.form-container form {
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    text-transform: capitalize;
+    border-radius: 15px;
+    font-size: 28px;
+    color: #442e33;
+}
+.form-container h3 {
+    text-align: center;
+    font-size: 28px;
+    color: #442e33;
+}
+.form-container form label {
+    font-size: 20px;
+    padding: 3px 0;
+    margin: 5px 0;
+}
+.form-container form input, textarea {
+    padding: 8px;
+    border-radius: 20px;
+    margin: 5px 0;
+    text-transform: capitalize;
+    font-size: 18px;
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
 /*set media querry*/
 @media screen and (max-width:920px){
     
