@@ -5,21 +5,42 @@ var numQuestion = document.getElementById("num-question");
 var quizContainer = document.getElementById("quiz-container");
 var endQuiz = document.getElementById("end-quiz");
 var endQuizScreen = document.getElementById("end-quiz-screen");
-
-
-var shuffledQuestions;
-
 /**
- * shuffleQuestions randomly shuffles the questions shuffledQuestions
+ * import script from another file
  */
-function shuffleQuestions(){
-    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
-  }
-
 import questions from "./questions.js";
 //Displyas number of current question and number of correct answers
 let currentQuestion = 0;
 let correctAnswers = 0;
+
+/**
+ * This function checks data correct and defines when the game is over
+ * if statement data correct is equal to true increase correctAnser 
+ * if statement currentQuestion = or bigger than questions length the game is over
+ * and it calls finish function
+ */
+function nextQuestion(e) {
+    if (e.target.getAttibute("data-correct") === "true")
+    {
+        correctAnswers++;
+    }
+    if (currentQuestion < questions.length -1) {
+        currentQuestion++;
+        loadQuestions();
+    } else {
+        finish();
+    }
+}
+/**
+ * This function is call when there are no more questions
+ * displyas a end screen with total of question the users made right
+ */
+function finish () {
+    endQuizScreen.innerHTML = `You made ${correctAnswers} of ${questions.length}`;
+    quizContainer.style.display = "none";
+    endQuiz.style.display = "flex";
+}
+
 
 /**
  * Get the current question number  and shows how many question to the end
@@ -48,33 +69,4 @@ function loadQuestions() {
       });
     }
     loadQuestions();
-    shuffleQuestions();
-    /**
-     * This function checks data correct and defines when the game is over
-     * if statement data correct is equal to true increase correctAnser 
-     * if statement currentQuestion = or bigger than questions length the game is over
-     * and it calls finish function
-     */
-    function nextQuestion(e) {
-        if (e.target.getAttibute("data-correct") === "true")
-        {
-            correctAnswers++;
-        }
-        if (currentQuestion < questions.length -1) {
-            currentQuestion++;
-            loadQuestions();
-            shuffleQuestions();
-        } else {
-            finish();
-        }
-    }
-    /**
-     * This function is call when there are no more questions
-     * displyas a end screen with total of question the users made right
-     */
-    function finish () {
-        endQuizScreen.innerHTML = `You made ${correctAnswers} of ${questions.length}`;
-        quizContainer.style.display = "none";
-        endQuiz.style.display = "flex";
-    }
-
+     

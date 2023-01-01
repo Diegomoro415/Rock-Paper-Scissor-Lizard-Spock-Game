@@ -258,6 +258,36 @@ label {
     width: 100%;
     gap: 10px;
 }
+#num-question {
+    text-align: end;
+}
+
+.answers {
+display: flex;
+flex-direction: column;
+gap: 5px;
+}
+
+#btn-end-screen {
+width: 100%;
+text-align: start;
+padding: 5px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+background-color: #008CCC;
+color: white;
+}
+
+#end-screen-quiz {
+display: none;
+flex-direction: column;
+gap: 10px;
+}
+
+#end-quiz button {
+text-align: center;
+}
 /*set media querry*/
 @media screen and (max-width:920px){
     
