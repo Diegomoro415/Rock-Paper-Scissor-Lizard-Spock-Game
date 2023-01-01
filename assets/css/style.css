@@ -18,7 +18,7 @@ body {
     background-color: #664C52;
 }
 /*Title*/
-h1 {
+header {
     background-color: #442e33;
     color: #F4EFDB;
     padding: 30px 0 30px 0;
@@ -27,6 +27,37 @@ h1 {
     font-family: 'Rubik Vinyl', cursive;
     font-weight: 900;
     letter-spacing: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.menu label {
+    display: none
+} 
+.menu {
+    letter-spacing: 1px;
+    margin-right: -30%;
+} 
+.menu ul {
+    display: flex;
+}
+.menu a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+}
+.menu li {
+    color: #442e33;
+    margin-left: -2px;
+    list-style: none;
+    margin-bottom: 5px;
+}
+.menu a:hover {
+    color: #f80606;
+}
+#active {
+    display: none;
 }
 /*Main Container where all the elements are in*/
 .game-container {
