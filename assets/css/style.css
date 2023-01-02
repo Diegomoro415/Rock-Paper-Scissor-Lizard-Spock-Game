@@ -265,7 +265,6 @@ label {
 .quiz-game {
     font-family: 'Asap', sans-serif;
     background-color: #664C52 ;
-    height: 100%;
     gap: 5px;
 }
 .quiz-header {
@@ -276,10 +275,10 @@ label {
 .quiz-game  main {
     background-color: #F4EFDB;
     padding: 10px;
-    border-radius: 10px;
     width: 100%;
     max-width: 70%;
     min-height: 30%;
+    margin: 0 15%;
     text-align: center;
     border: solid 3px #442e33;
 }
@@ -303,13 +302,14 @@ label {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    border: solid 1px #442e33;
 }
 .answer {
     width: 90%;
     font-size: 18px;
     cursor: pointer;
     background-color: #008CCC;
-    color: #442e33;
+    color: whitesmoke;
 }
 button.answer:hover {
     background-color: whitesmoke;
@@ -336,14 +336,17 @@ button.answer:hover {
 }
 /* feedback page */
 .feedback {
-    display: relative;
-    background-color: #F4EFDB;
+    display: block;
+    background-color: #664c52;
+    width: 70%;
+    height: 90%;
+    margin: 0 15%;
+    border: solid 3px #442e33;
 }
 
 .form-container {
-    height: 600px;
-    width: 600px;
-    margin: 50px auto;
+    background-color: #F4EFDB;
+    width: 100%;
 }
 .form-container form {
     height: 500px;
