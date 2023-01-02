@@ -33,26 +33,32 @@ header {
     display: none
 } 
 .menu {
-    letter-spacing: 1px;
     align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 } 
 .menu ul {
     display: flex;
+    align-items: center;
 }
 .menu a {
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 18px;
     font-family: 'Asap', sans-serif;
+    color: #5AD0E8;
 }
 .menu li {
+    display: flex;
+    align-items: center;
     color: #F4EFDB;
     margin-left: 14px;
     list-style: none;
-    margin-bottom: 5px;
+    margin-top: 8px;
 }
 .menu a:hover {
-    color: #442e33;
+    color: #FF424E;
 }
 #active {
     display: none;
@@ -257,29 +263,25 @@ label {
 }
 /*Quiz Game*/
 .quiz-game {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: 'Asap', sans-serif;
     background-color: #664C52 ;
     height: 100%;
-    flex-direction: column;
     gap: 5px;
 }
-.feedback-header {
-    display: block
+.quiz-header {
+    width: 70%;
+    margin: 0 15%;
+    border: solid 3px #442e33;
 }
 .quiz-game  main {
-
     background-color: #F4EFDB;
     padding: 10px;
     border-radius: 10px;
     width: 100%;
-    max-width: 300px;
-    min-height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    max-width: 70%;
+    min-height: 30%;
+    text-align: center;
+    border: solid 3px #442e33;
 }
 #quiz-container {
     display: flex;
@@ -290,37 +292,54 @@ label {
 #num-question {
     text-align: end;
 }
-
-.answers {
-display: flex;
-flex-direction: column;
-gap: 5px;
+#question {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Asap', sans-serif;
+    margin: 10px;
 }
 
+#answers {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.answer {
+    width: 90%;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #008CCC;
+    color: #442e33;
+}
+button.answer:hover {
+    background-color: whitesmoke;
+}
 #btn-end-screen {
-width: 100%;
-text-align: start;
-padding: 5px;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-background-color: #008CCC;
-color: white;
+    width: 100%;
+    text-align: start;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #008CCC;
+    color: white;
 }
 
 #end-screen-quiz {
-display: none;
-flex-direction: column;
-gap: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
 }
 
 #end-quiz button {
-text-align: center;
+    text-align: center;
 }
 /* feedback page */
 .feedback {
+    display: relative;
     background-color: #F4EFDB;
 }
+
 .form-container {
     height: 600px;
     width: 600px;
