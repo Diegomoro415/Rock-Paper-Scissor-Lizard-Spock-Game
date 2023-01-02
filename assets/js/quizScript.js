@@ -20,7 +20,7 @@ let correctAnswers = 0;
  * and it calls finish function
  */
 function nextQuestion(e) {
-    if (e.target.getAttibute("data-correct") === "true")
+    if (e.target.getAttribute("data-correct") === "true")
     {
         correctAnswers++;
     }

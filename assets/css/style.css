@@ -219,13 +219,22 @@ label {
 /*Style winner and loser screen*/
 #winner {
     background-color:#442e33;
-    background: #F4EFDB;
+    background: whitesmoke;
     z-index: 999;
+    width: 80%;
+    height: 80%;
+    margin: 8% 10%;
+    border: 1px solid #442e33;
+
 }
 #loser {
     background-color: #442e33;
-    background: #F4EFDB;
-    z-index: 999;
+    background: whitesmoke;
+    z-index: 999;    
+    width: 80%;
+    height: 80%;
+    margin: 8% 10%;
+    border: 1px solid #442e33;
 }
 .final-screen h3{
     color: #442e33;
@@ -345,7 +354,6 @@ button.answer:hover {
     width: 70%;
     height: 90%;
     margin: 0 15%;
-    border: solid 3px #442e33;
 }
 
 .form-container {
