@@ -302,18 +302,21 @@ label {
 #answers {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
 }
 .answer {
     width: 90%;
     font-size: 18px;
+    font-weight: 600;
     cursor: pointer;
     background-color: #008CCC;
     color: whitesmoke;
     border: 1px solid #442e33;
+    padding: 10px;
 }
 button.answer:hover {
     background-color: whitesmoke;
+    color: #442e33;
 }
 #btn-end-screen {
     width: 100%;
@@ -351,7 +354,6 @@ button.answer:hover {
 }
 .form-container form {
     height: 500px;
-    width: 500px;
     display: flex;
     flex-direction: column;
     padding: 30px;
