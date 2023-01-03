@@ -388,7 +388,30 @@ button.answer:hover {
     font-size: 18px;
     box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.3);
 }
-
+/*404 Error*/
+.error {
+    width: 80%;
+    margin: 5%;
+}
+.error-text {
+    text-align: center;
+    background-color: whitesmoke; 
+}
+.error-text img {
+    width: 100%;
+}
+.error-text button {
+    background-color: #FF424E;
+    color: whitesmoke;
+    margin: 20px;
+    padding: 8px 45px;
+    font-size: larger;
+    border-radius: 7px;
+}
+.error-text button:hover {
+    cursor: pointer;
+    background-color: #912229;
+}
 /*set media querry*/
 @media screen and (max-width:920px){
     
