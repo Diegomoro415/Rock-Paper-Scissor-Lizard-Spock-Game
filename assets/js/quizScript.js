@@ -5,6 +5,7 @@ var numQuestion = document.getElementById("num-question");
 var quizContainer = document.getElementById("quiz-container");
 var endQuiz = document.getElementById("end-quiz");
 var endQuizScreen = document.getElementById("end-quiz-screen");
+var btnRestart = document.getElementById("btn-end-screen");
 /**
  * import script from another file
  */
@@ -12,7 +13,15 @@ import questions from "./questions.js";
 //Displyas number of current question and number of correct answers
 let currentQuestion = 0;
 let correctAnswers = 0;
-
+// when user clicks submit, show results
+btnRestart.onclick = () => {
+    quizContainer.style.display = "flex";
+    endQuiz.style.display = "none";
+  
+    currentQuestion = 0;
+    correctAnswers = 0;
+    loadQuestions();
+};
 /**
  * This function checks data correct and defines when the game is over
  * if statement data correct is equal to true increase correctAnser 
@@ -36,12 +45,10 @@ function nextQuestion(e) {
  * displyas a end screen with total of question the users made right
  */
 function finish () {
-    endQuizScreen.innerHTML = `You made ${correctAnswers} of ${questions.length}`;
+    endQuizScreen.innerHTML = `<h3>You made ${correctAnswers} of ${questions.length}</h3>`;
     quizContainer.style.display = "none";
     endQuiz.style.display = "flex";
 }
-
-
 /**
  * Get the current question number  and shows how many question to the end
  * everytime load question  add by 1 current question number
