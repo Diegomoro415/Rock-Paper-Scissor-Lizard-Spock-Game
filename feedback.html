@@ -8,7 +8,19 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- link style css -->
     <link rel="stylesheet" href="https://diegomoro415.github.io/Rock-Paper-Scissor-Lizard-Spock-Game/assets/css/style.css">
-  
+    <!--bootstrap 4 cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!--EmailJs code snippet-->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("r4hvSScA4b_4P_RnC");
+   })();
+</script>
+
     <title>Feedback</title>
 </head>
 <body class="feedback">
@@ -29,18 +41,15 @@
     <div class="form-container">
         <form action="">
             <h3>Give Your Feedback</h3>
-            <label for="fname">Name:</label>
-            <input type="text" name="fname" placeholder="Please enter your first name" required>
-            <label for="lname">Last Name:</label>
-            <input type="text" name="lname" placeholder="Please enter your last name" required>
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" placeholder="Please enter your name" required>
             <label for="email">E-Mail</label>
-            <input type="email" name="email" placeholder="Please enter your e-mail" required>
-            <label for="phone">Contact Number</label>
-            <input type="tel" name="phone" placeholder="Please enter your phone number" required>
-            <label for="feedback">Your Message</label>
-            <textarea name="feedback" cols="20" rows="8" placeholder="Please enter your message" required></textarea>
-            <input type="button" value="submit">
+            <input id="email" type="email" name="email" placeholder="Please enter your e-mail" required>
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" cols="20" rows="8" placeholder="Please enter your message" required></textarea>
+            <button class="btn-feedback" onclick="sendEmail()">Submit</button>
         </form>
     </div>
+    <script src="https://diegomoro415.github.io/Rock-Paper-Scissor-Lizard-Spock-Game/assets/js/contactUs.js"></script>
 </body>
 </html>

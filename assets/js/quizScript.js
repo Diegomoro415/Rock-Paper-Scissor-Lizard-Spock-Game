@@ -1,11 +1,11 @@
 /*jshint esversion: 6*/
-var question = document.getElementById("question");
-var answers = document.getElementById("answers");
-var numQuestion = document.getElementById("num-question");
-var quizContainer = document.getElementById("quiz-container");
-var endQuiz = document.getElementById("end-quiz");
-var endQuizScreen = document.getElementById("end-quiz-screen");
-var btnRestart = document.getElementById("btn-end-screen");
+const question = document.getElementById("question");
+const answers = document.getElementById("answers");
+const numQuestion = document.getElementById("num-question");
+const quizContainer = document.getElementById("quiz-container");
+const endQuiz = document.getElementById("end-quiz");
+const endQuizScreen = document.getElementById("end-screen-quiz");
+const btnRestart = document.getElementById("btn-end-screen");
 /**
  * import script from another file
  */
@@ -45,7 +45,7 @@ function nextQuestion(e) {
  * displyas a end screen with total of question the users made right
  */
 function finish () {
-    endQuizScreen.innerHTML = `<h3>You made ${correctAnswers} of ${questions.length}</h3>`;
+    endQuizScreen.innerHTML = `You made ${correctAnswers} of ${questions.length}`;
     quizContainer.style.display = "none";
     endQuiz.style.display = "flex";
 }
