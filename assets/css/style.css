@@ -329,6 +329,7 @@ button.answer:hover {
     color: #442e33;
 }
 #btn-end-screen {
+    display: none;    
     width: 80%;
     text-align: start;
     margin: 30px 0;
@@ -342,7 +343,7 @@ button.answer:hover {
 }
 
 #end-screen-quiz {
-    display: none;
+    display: flex;
     flex-direction: column;
     font-size: xx-large;
     gap: 10px;

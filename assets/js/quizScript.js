@@ -17,7 +17,6 @@ let correctAnswers = 0;
 btnRestart.onclick = () => {
     quizContainer.style.display = "flex";
     endQuiz.style.display = "none";
-  
     currentQuestion = 0;
     correctAnswers = 0;
     loadQuestions();
@@ -48,6 +47,7 @@ function finish () {
     endQuizScreen.innerHTML = `You made ${correctAnswers} of ${questions.length}`;
     quizContainer.style.display = "none";
     endQuiz.style.display = "flex";
+    btnRestart.style.display = "flex";
 }
 /**
  * Get the current question number  and shows how many question to the end
