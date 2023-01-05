@@ -318,6 +318,7 @@ label {
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
+    border-radius: 7px;
     background-color: #008CCC;
     color: whitesmoke;
     border: 1px solid #442e33;
@@ -328,9 +329,11 @@ button.answer:hover {
     color: #442e33;
 }
 #btn-end-screen {
-    width: 100%;
+    width: 80%;
     text-align: start;
-    padding: 5px;
+    margin: 30px 0;
+    font-size: large;
+    padding: 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -341,9 +344,15 @@ button.answer:hover {
 #end-screen-quiz {
     display: none;
     flex-direction: column;
+    font-size: xx-large;
     gap: 10px;
 }
-
+#end-quiz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px;
+}
 #end-quiz button {
     text-align: center;
 }
@@ -381,7 +390,7 @@ button.answer:hover {
     padding: 3px 0;
     margin: 5px 10%;
 }
-.form-container form input, textarea {
+.form-container form input {
     padding: 8px;
     border-radius: 7px;
     width: 80%;
@@ -394,6 +403,8 @@ button.answer:hover {
     font-size: 18px;
     width: 80%;
     margin: 5px 10%;
+    height: fit-content;
+    border-radius: 7px;
     box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.3);
 }
 .btn-feedback {
@@ -414,7 +425,7 @@ button.answer:hover {
     background-color: whitesmoke; 
 }
 .error-text img {
-    width: 100%;
+    width: 60%;
 }
 .error-text button {
     background-color: #FF424E;
@@ -488,7 +499,11 @@ button.answer:hover {
     .form-container h3 {
         font-size: 20px;
     }
-    .form-container form input, textarea {
+    .form-container form input {
         font-size: 12px;
+    }
+    /*404 Error*/
+    .error-text img {
+        width: 100%;
     }
 }
