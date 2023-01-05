@@ -2,9 +2,6 @@
 //variable score
 var scoreUser = 0;
 var scorePc = 0;
-//variable Players
-var player1 = "";
-var computer = "";
 //aplications
 const displayPlayer1 = document.getElementById("player1");
 const displayComputer = document.getElementById("computer");
@@ -12,7 +9,9 @@ const scoreBoard = document.getElementById("score-board");
 const playing = document.getElementById("playing");
 const winner = document.getElementById("winner");
 const loser = document.getElementById("loser");
-
+//variable Players
+var player1 = "";
+var computer = "";
 // Calls startGame and playPc function after user's click
 playing.addEventListener("click", () => {
     startGame();
@@ -75,23 +74,19 @@ function checkResult() {
     } else {
         scorePc = scorePc + 1;
     }
-    
-    //displays score
-    scoreBoard.innerHTML = scoreUser +  ":" + scorePc;
-    
     //defines tha game is over after 5 wins
     //user reaches 5 wins pop up winner final-screen
     if (scoreUser >= 5){
         winner.classList.remove('none');
         winner.classList.add('center');
     }
-    
     //computer reaches 5 wins pop up loser final-screen
     if (scorePc >= 5){
         loser.classList.remove('none');
         loser.classList.add('center');
     }
-    
+    //displays score
+    scoreBoard.innerHTML = scoreUser +  ":" + scorePc;
     //set time 1 second to the next try
     setTimeout(()=>{
         playing.disabled = false;
@@ -110,8 +105,10 @@ function checkResult() {
      * sets display and score to 0 to start a new game
      */
         function newGame(){
+        scoreBoard.innerHTML = "0:0";
         scorePc = 0;
         scoreUser = 0;
+        startGame();
         winner.classList.add('none');
         winner.classList.remove('center');
         loser.classList.add('none');
