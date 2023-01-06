@@ -313,9 +313,9 @@ h2 {
     font-weight: 600;
     cursor: pointer;
     border-radius: 7px;
-    background-color: #008CCC;
-    color: whitesmoke;
-    border: 1px solid #442e33;
+    background-color: #2EBDFF;
+    color: #271B1F;
+    border: 1px solid #271B1F;
     padding: 10px;
 }
 button.answer:hover {
