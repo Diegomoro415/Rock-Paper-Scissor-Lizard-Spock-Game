@@ -87,7 +87,7 @@ header {
     width: 25%;
     font-size: 24px;
     font-weight: 600;
-    color: #442e33;
+    color: #000000;
     border-radius: 10px;
     padding: 10px;
     border: 3px solid #442e33;    
@@ -98,7 +98,7 @@ header {
 }
 
 .red {
-    background-color: #FF424E;
+    background-color: #FF616B;
     right: 5%;
 }
 .score {
