@@ -116,7 +116,7 @@ header {
     font-weight: bold;
     letter-spacing: 7px;
 }
-/*style display*/
+/*Display*/
 .display {
     height: 200px;
     margin-left: 2.5%;
@@ -142,7 +142,7 @@ header {
 .reverse {
     transform: scaleX(-1);
 }
-/*style buttons that user can play*/
+/*Style buttons that user can play*/
 h2 {
     font-family: 'Asap', sans-serif;
     text-align: center;
@@ -164,7 +164,6 @@ h2 {
 .choices {
     position: relative;
 }
-
 [type=radio]{
     position: absolute;
     left: 0;
@@ -180,9 +179,6 @@ h2 {
     cursor: pointer;
     margin-right: 8px;
 }
-label {
-    display: none;
-}
 .choices button {
     width: 110px;
     height: 110px;
@@ -193,10 +189,8 @@ label {
 .choices button:hover{
    background-color: #442e33;
 }
-
 .choices button:hover > img {
     max-width: 80%; 
-    
 }
 .btn-play, .btn-play:disabled:hover {
     width: 90%;
@@ -225,7 +219,6 @@ label {
     height: 80%;
     margin: 8% 10%;
     border: 1px solid #442e33;
-
 }
 #loser {
     background-color: #442e33;
@@ -298,6 +291,7 @@ label {
     width: 100%;
     gap: 10px;
 }
+/*Style Questions*/
 #num-question {
     text-align: end;
 }
@@ -307,7 +301,7 @@ label {
     font-family: 'Asap', sans-serif;
     margin: 10px;
 }
-
+/*Style Answer*/
 #answers {
     display: flex;
     flex-direction: column;
@@ -328,6 +322,7 @@ button.answer:hover {
     background-color: whitesmoke;
     color: #442e33;
 }
+/*End Screen style*/
 #btn-end-screen {
     display: none;    
     width: 80%;
@@ -365,7 +360,7 @@ button.answer:hover {
     height: 90%;
     margin: 0 15%;
 }
-
+/*style form*/
 .form-container {
     background-color: #F4EFDB;
     width: 100%;
@@ -442,7 +437,7 @@ button.answer:hover {
 }
 /*set media querry*/
 @media screen and (max-width:920px){
-    
+    /*Game style*/
     h1 {
         font-size: 25px;
     }

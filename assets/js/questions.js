@@ -1,3 +1,6 @@
+/**
+ * Question for Quiz Game
+ */
 export default [
     {
         question: "What country has the highest life expectancy?",

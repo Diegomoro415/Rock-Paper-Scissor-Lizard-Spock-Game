@@ -1,3 +1,7 @@
+/**
+ * Email Js 
+ * colletct and send data
+ */
 function sendEmail () {
     var data = {
         name: document.getElementById("name").value,
