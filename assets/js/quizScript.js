@@ -6,6 +6,7 @@ const quizContainer = document.getElementById("quiz-container");
 const endQuiz = document.getElementById("end-quiz");
 const endQuizScreen = document.getElementById("end-screen-quiz");
 const btnRestart = document.getElementById("btn-end-screen");
+const btnAnswer = document.getElementsByClassName("answer");
 /**
  * import script from another file
  */
@@ -63,7 +64,7 @@ function loadQuestions() {
         const div = document.createElement("div");
     //create button for answers, colletct data for correct answer and display answers options
         div.innerHTML = `
-        <button class="answer" data-correct="${answer.correct}">
+        <button class="answer" onclick="checkAnswer()" data-correct="${answer.correct}">
           ${answer.option}
         </button>
         `;
@@ -72,8 +73,17 @@ function loadQuestions() {
       });
       // Querry selector to all these buttons,  forEach to item to assign click events to each button
       document.querySelectorAll(".answer").forEach((item) => {
-        item.addEventListener("click", nextQuestion);
+        item.addEventListener("click", checkAnswer, nextQuestion);
       });
     }
     loadQuestions();
+
+    function checkAnswer() {
+        if (e.target.getAttribute("data-correct") === "true")
+        {
+            document.btnAnswer.style.backgroundColor = "green";
+        } else {
+            document.btnAnswer.style.backgroundColor = "red";
+        }
+    }
      
