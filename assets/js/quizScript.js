@@ -64,7 +64,7 @@ function loadQuestions() {
         const div = document.createElement("div");
     //create button for answers, colletct data for correct answer and display answers options
         div.innerHTML = `
-        <button class="answer" onclick="checkAnswer()" data-correct="${answer.correct}">
+        <button class="answer" data-correct="${answer.correct}">
           ${answer.option}
         </button>
         `;
