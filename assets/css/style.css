@@ -340,8 +340,8 @@ button.answer:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #008CCC;
-    color: white;
+    background-color: #00A4F0;
+    color: #000000;
 }
 
 #end-screen-quiz {
