@@ -1,108 +1,204 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock Paper Scissor Lizard Scissor Game
+(Developer Diego Moro)
 
-Welcome Diegomoro415,
+![Mockup image](docs/mockup.png)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[Live webpage](https://diegomoro415.github.io/Rock-Paper-Scissor-Lizard-Spock-Game/)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Table Of Content
 
-## Gitpod Reminders
+1. [Project Goals](#project-golas)
+    1. [User Goals](#user-goals)
+    2. [Site Owner Goals](#site-owner-goals)
+2. [User Experience](#user-experience)
+    1. [Target Audience](#target-audience)
+    2. [User Requrements and Expectations](#user-requrements-and-expectations)
+    3. [User Stories](#user-stories)
+3. [Design](#design)
+    1. [Design Choices](#design-choices)
+    2. [Colour](#colours)
+    3. [Fonts](#fonts)
+    4. [Structure](#structure)
+    5. [Wireframes](#wireframes)
+4. [Technologies Used](#technologies-used)
+    1. [Languages](#languages)
+    2. [Frameworks & Tools](#frameworks-&-tools)
+5. [Features](#features)
+6. [Testing](#validation)
+    1. [HTML Validation](#HTML-validation)
+    2. [CSS Validation](#CSS-validation)
+    3. [Accessibility](#accessibility)
+    4. [Performance](#performance)
+    5. [Device testing](#performing-tests-on-various-devices)
+    6. [Browser compatibility](#browser-compatability)
+    7. [Testing user stories](#testing-user-stories)
+8. [Bugs](#Bugs)
+9. [Deployment](#deployment)
+10. [Credits](#credits)
+11. [Acknowledgements](#acknowledgements)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Project Goals
 
-`python3 -m http.server`
+### User Goals
+    - The site’s users want to play an online game that has elements of chance.
 
-A blue button should appear to click: _Make Public_,
+### Site Owner Goals
+    - The site’s goal is to provide a challenging game to entertain online users.
+    - Obtain productive feedback to further adjustments and user experience improvement.
+    - Collect user's data such as name, email.
 
-Another blue button should appear to click: _Open Browser_.
+## User Experience
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Target Audience
+    - Users that are looking for rock, paper scissor game.
+    - Users that are looking for a Quiz game.
+    - Users that are looking for games to be entertained.
 
-A blue button should appear to click: _Make Public_,
+### User Requrements and Expectations
+    - A simple and intuitive navigation system.
+    - Links and functions that work as expected.
+    - Good presentation and a visually appealing design regardless of screen size.
+    - Simple content that the user can skim read.
+    - Accessibility
 
-Another blue button should appear to click: _Open Browser_.
+### User Stories
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+#### First-time User 
+1. As a first time user, I want to play rock-paper scissor game.
+2. As a first time user, I want to play a quiz game.
 
-To log into the Heroku toolbelt CLI:
+#### Returning User
+3. As a returning user, I want to play rock paper scissor game, see my results and try to improve.
+4. As a returnign user, I want to play a quiz game, see my results and try to improve.
+5. As a returning user, I want to give feedback for ideas and improvement.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+#### Site Owner 
+6. As the site owner, I want users to be challenged by the games and always try to improve your score.
+7. As the site owner, I want users to fill feedback form provide Name, email and feedback message.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Design
 
-------
+### Design Choices
+The webpage was designed to entertain by providing challenge games, easy navigation, a good presentation and a visually appealing.
+### Colour
+To narrow down the colours I used Canva Color Palette Generator. After deciding on the colour I tested them on WebAIM to make sure the contrast between them was right.
+<br>
 
-## Release History
+![Colour Scheme](docs/features/color_palette.png)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Fonts
+Rubik Vinyl was used for the header and Asap was used for the body. Both fonts are considered dyslexia friendly.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Structure
+The page is structured in a well know, recognizable, user friendly, and easy to learn way. at the top of the page contains navigation link to game, quiz and feedback page.
+The website consists of three separate pages: 
+- A homepage where user can play Rock Paper Scissor Lizar and spock Game against computer.
+- A quiz page where user can play a quiz game with 15 questions.
+- A feedback page that contains a form where users can fill with your name, email and feedback message.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Wireframes
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+<details><summary>Game</summary>
+<img src="docs/wireframes/index_wireframe.png">
+</details>
+<details><summary>About</summary>
+<img src="docs/wireframes/quiz_wireframe.png">
+</details>
+<details><summary>Menu</summary>
+<img src="docs/wireframes/feedback_wireframe.png">
+</details>
+<details><summary>Gallery</summary>
+<img src="docs/wireframes/404_wireframe.png">
+</details>
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+## Technologies Used
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Languages
+- HTML
+- CSS
+- JAVASCRIPT
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Frameworks & Tools
+- Bootstrap 4 cdn
+- Git
+- GitHub
+- Gitpod
+- Figma
+- Google Fonts
+- Canva Color Generator
+- Email Js
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Features 
+The page consists of three pages and twelve features.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Game Page Header
+- Featured name of the game.
+- The navbar with links to game, quiz and feedback page.
+- It allows users to easily navigate the page.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+![Game Header](docs/features/game_header.png)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Game Score
+- This feature contain score increasing by one everytime player wins or when computer wins.
+- The score goes till 5, the game is over when player or computer score 5 first.
+- Player 1 is indentified by blue color on the left side of the screen.
+- Computer is indentified by red  color on the right side of the screen.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+![Game Score](docs/features/game_score.png)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Game Display 
+- It displays the image that the user chose.
+- It display the image that the computer random generated.
+- Display image for 1 second than image disapers to get ready for the next move.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+![Game Display](docs/features/game_display.png)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Display Moves
+- It contains 5 buttons for (Rock, Paper, Scissor, Lizard, Spock).
+- After the users pick a move user need to press the PLAY button just bellow the moves button.
 
-------
+![Display Moves](docs/features/game_moves.png)
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Winner Screen
+- It pop-up when user reach 5 wins.
+- Contains a Text saying that user wins and a button to play again.
 
-**How will this affect me?**
+![Winner Screen](docs/features/winner_screen.png)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Loser Screen
+- It pop-up when computer reach 5 wins.
+- Contains a text saying that user lose and a button to try again.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+![Loser Screen](docs/features/loser_screen.png)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Quiz Header
+- Featured name of the game.
+- The navbar with links to game, quiz and feedback page.
+- It allows users to easily navigate the page.
 
-**So….?**
+![Quiz Header](docs/features/feedback_header.png)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Quiz answers
+- It contains 4 buttons where user can chose.
 
-**Can I opt out?**
+![Quiz Answers](docs/features/quiz_answers.png)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Quiz Score 
+- It show up the users result after answer all question.
+- Contains a button to play again and star over.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+![Quiz Score](docs/features/quiz_score.png)
 
-**Anything more?**
+### Feedback Header
+- Featured name of the game.
+- The navbar with links to game, quiz and feedback page.
+- It allows users to easily navigate the page.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+![Feedback Header](docs/features/feedback_header.png)
 
----
+### Feedback Form
+- Contains a form where the user can fill with name, email and give feedback for improvements and ideas.
 
-Happy coding!
+![Feedback Form](docs/features/feedback_form.png)
