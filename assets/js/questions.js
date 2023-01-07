@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 /**
  * Question for Quiz Game
  */
