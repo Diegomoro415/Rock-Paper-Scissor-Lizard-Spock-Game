@@ -202,3 +202,43 @@ The page consists of three pages and twelve features.
 - Contains a form where the user can fill with name, email and give feedback for improvements and ideas.
 
 ![Feedback Form](docs/features/feedback_form.png)
+
+## Validation
+
+### HTML Validation
+The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors no warnings to show.
+<details><summary>Game</summary>
+<img src="docs/validations/index_validation.png">
+</details>
+<details><summary>Quiz</summary>
+<img src="docs/validations/quiz_validation.png">
+</details>
+<details><summary>Feedback</summary>
+<img src="docs/validations/feedback_validation.png">
+</details>
+<details><summary>404 Error</summary>
+<img src="docs/validations/404_validation.png">
+</details>
+
+### CSS Validation
+The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website.
+No Errors are found.
+<details><summary>Css Validation</summary>
+<img src="docs/validations/css_validation.png">
+</details>
+
+### Accessibility
+The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages pass with 0 errors.
+<details><summary>Game</summary>
+<img src="docs/validations/index_accessibility.png">
+</details>
+<details><summary>Quiz</summary>
+<img src="docs/validations/quiz_accessibility.png">
+</details>
+<details><summary>Feedback</summary>
+<img src="docs/validations/feedback_accessibility.png">
+</details>
+<details><summary>404 Error</summary>
+<img src="docs/validations/404_accessibility.png">
+</details>
+
