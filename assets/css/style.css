@@ -130,6 +130,7 @@ header {
 }
 #player1 img {
     width: 69rem;
+    max-width: 18rem;
 }
 .move-chose div {
     width: 100%;
