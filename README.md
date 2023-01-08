@@ -7,7 +7,7 @@
 
 ## Table Of Content
 
-1. [Project Goals](#project-golas)
+1. [Project Goals](#project-goals)
     1. [User Goals](#user-goals)
     2. [Site Owner Goals](#site-owner-goals)
 2. [User Experience](#user-experience)
@@ -16,7 +16,7 @@
     3. [User Stories](#user-stories)
 3. [Design](#design)
     1. [Design Choices](#design-choices)
-    2. [Colour](#colours)
+    2. [Colours](#colours)
     3. [Fonts](#fonts)
     4. [Structure](#structure)
     5. [Wireframes](#wireframes)
@@ -28,14 +28,15 @@
     1. [HTML Validation](#HTML-validation)
     2. [CSS Validation](#CSS-validation)
     3. [Accessibility](#accessibility)
-    4. [Performance](#performance)
-    5. [Device testing](#performing-tests-on-various-devices)
-    6. [Browser compatibility](#browser-compatability)
-    7. [Testing user stories](#testing-user-stories)
-8. [Bugs](#Bugs)
-9. [Deployment](#deployment)
-10. [Credits](#credits)
-11. [Acknowledgements](#acknowledgements)
+    4. [Script Validation](#script-validation)
+    5. [Performance](#performance)
+    6. [Device testing](#performing-tests-on-various-devices)
+    7. [Browser compatibility](#browser-compatability)
+    8. [Testing user stories](#testing-user-stories)
+9. [Bugs](#Bugs)
+10. [Deployment](#deployment)
+11. [Credits](#credits)
+12. [Acknowledgements](#acknowledgements)
 
 ## Project Goals
 
@@ -80,7 +81,7 @@
 
 ### Design Choices
 The webpage was designed to entertain by providing challenge games, easy navigation, a good presentation and a visually appealing.
-### Colour
+### Colours
 To narrow down the colours I used Canva Color Palette Generator. After deciding on the colour I tested them on WebAIM to make sure the contrast between them was right.
 <br>
 
