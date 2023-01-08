@@ -168,14 +168,14 @@ The page consists of three pages and twelve features.
 ### Winner Screen
 - It pop-up when user reach 5 wins.
 - Contains a Text saying that user wins and a button to play again.
-- User stories covered: 1, 3 and 6.
+- User stories covered: 3 and 6.
 
 ![Winner Screen](docs/features/winner_screen.png)
 
 ### Loser Screen
 - It pop-up when computer reach 5 wins.
 - Contains a text saying that user lose and a button to try again.
-- User stories covered: 1, 3 and 6.
+- User stories covered: 3 and 6.
 
 ![Loser Screen](docs/features/loser_screen.png)
 
@@ -204,7 +204,7 @@ The page consists of three pages and twelve features.
 - Featured name of the game.
 - The navbar with links to game, quiz and feedback page.
 - It allows users to easily navigate the page.
-- User stories covered:  1 and 5.
+- User stories covered: 5.
 
 ![Feedback Header](docs/features/feedback_header.png)
 
@@ -285,4 +285,48 @@ The website was tested on the following browsers:
 - Mozilla Firefox
 - Microsoft Egde
 - Safari
+
+### Testing user stories
+
+1. As a first time user, I want to play rock-paper-scissor game.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Game Header | Navigate to Game page | Rock-Paper-Scissor-Lizard-Spock game against computer | Works as expected |
+| Game Score | Display user and computer score | Score finish after a player reachs 5 wins | Works as expected |
+| Game Display | Displays the move image the user chose to play | Chose a move to play to try to beat computer | Works as expected |
+| Game Moves | Choose moves to play the game | Rock-Paper-Scissor-Lizard-Spock game against computer | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user_testing/user_test_game_header.png">
+<img src="docs/user_testing/user_test_game_score.png">
+<img src="docs/user_testing/user_test_game_display.png">
+<img src="docs/user_testing/user_test_game_moves.png">
+</details>
+
+2. As a first time user, I want to play a quiz game.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Quiz Header | Navigate to quiz page | Play a quiz game with multiple choice| Works as expected |
+| Quiz Answers | Four buttons that user can choose one | Four option contains one right answer | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user_testing/user_test_quiz_header.png">
+<img src="docs/user_testing/user_test_quiz_answer.png">
+</details>
+
+3. As a returning user, I want to play rock paper scissor game, see my results and try to improve.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Game Score | Display user and computer score | Score finish after a player reachs 5 wins | Works as expected |
+| Winner Screen| Display a winner message after user reach 5 wins | Victory message and a Play Again button | Works as expected |
+| Loser Screen | Display a loser message after computer reach 5 wins | Lose message and a play again button | Works as expected | 
+
+<details><summary>Screenshots</summary>
+<img src="docs/user_testing/user_test_game_score.png">
+<img src="docs/user_testing/user_test_winner_screen.png">
+<img src="docs/user_testing/user_test_loser_screen.png">
+</details>
 
