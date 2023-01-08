@@ -84,7 +84,7 @@ The webpage was designed to entertain by providing challenge games, easy navigat
 To narrow down the colours I used Canva Color Palette Generator. After deciding on the colour I tested them on WebAIM to make sure the contrast between them was right.
 <br>
 
-![Colour Scheme](docs/features/color_palette.png)
+![Colour Scheme](docs/color_palette.png)
 
 ### Fonts
 Rubik Vinyl was used for the header and Asap was used for the body. Both fonts are considered dyslexia friendly.
@@ -101,13 +101,13 @@ The website consists of three separate pages:
 <details><summary>Game</summary>
 <img src="docs/wireframes/index_wireframe.png">
 </details>
-<details><summary>About</summary>
+<details><summary>Quiz</summary>
 <img src="docs/wireframes/quiz_wireframe.png">
 </details>
-<details><summary>Menu</summary>
+<details><summary>Feedback</summary>
 <img src="docs/wireframes/feedback_wireframe.png">
 </details>
-<details><summary>Gallery</summary>
+<details><summary>404 Error</summary>
 <img src="docs/wireframes/404_wireframe.png">
 </details>
 
@@ -135,6 +135,7 @@ The page consists of three pages and twelve features.
 - Featured name of the game.
 - The navbar with links to game, quiz and feedback page.
 - It allows users to easily navigate the page.
+- User stories covered: 1 and 2. 
 
 ![Game Header](docs/features/game_header.png)
 
@@ -143,6 +144,7 @@ The page consists of three pages and twelve features.
 - The score goes till 5, the game is over when player or computer score 5 first.
 - Player 1 is indentified by blue color on the left side of the screen.
 - Computer is indentified by red  color on the right side of the screen.
+- User stories covered: 3 and 6.
 
 ![Game Score](docs/features/game_score.png)
 
@@ -150,12 +152,14 @@ The page consists of three pages and twelve features.
 - It displays the image that the user chose.
 - It display the image that the computer random generated.
 - Display image for 1 second than image disapers to get ready for the next move.
+- User stories covered: 1 and 3.
 
 ![Game Display](docs/features/game_display.png)
 
 ### Display Moves
 - It contains 5 buttons for (Rock, Paper, Scissor, Lizard, Spock).
 - After the users pick a move user need to press the PLAY button just bellow the moves button.
+- User stories covered: 1 and 3.
 
 ![Display Moves](docs/features/game_moves.png)
 
@@ -164,12 +168,14 @@ The page consists of three pages and twelve features.
 ### Winner Screen
 - It pop-up when user reach 5 wins.
 - Contains a Text saying that user wins and a button to play again.
+- User stories covered: 1, 3 and 6.
 
 ![Winner Screen](docs/features/winner_screen.png)
 
 ### Loser Screen
 - It pop-up when computer reach 5 wins.
 - Contains a text saying that user lose and a button to try again.
+- User stories covered: 1, 3 and 6.
 
 ![Loser Screen](docs/features/loser_screen.png)
 
@@ -177,17 +183,20 @@ The page consists of three pages and twelve features.
 - Featured name of the game.
 - The navbar with links to game, quiz and feedback page.
 - It allows users to easily navigate the page.
+- User stories covered: 2 and 4.
 
 ![Quiz Header](docs/features/feedback_header.png)
 
 ### Quiz answers
 - It contains 4 buttons where user can chose.
+- User stories covered: 2 and 4.
 
 ![Quiz Answers](docs/features/quiz_answers.png)
 
 ### Quiz Score 
 - It show up the users result after answer all question.
 - Contains a button to play again and star over.
+- User stories covered: 2, 4 and 6.
 
 ![Quiz Score](docs/features/quiz_score.png)
 
@@ -195,11 +204,13 @@ The page consists of three pages and twelve features.
 - Featured name of the game.
 - The navbar with links to game, quiz and feedback page.
 - It allows users to easily navigate the page.
+- User stories covered:  1 and 5.
 
 ![Feedback Header](docs/features/feedback_header.png)
 
 ### Feedback Form
 - Contains a form where the user can fill with name, email and give feedback for improvements and ideas.
+- User stories covered: 5 and 7.
 
 ![Feedback Form](docs/features/feedback_form.png)
 
@@ -262,4 +273,16 @@ Google Lighthouse in Google Chrome Developer Tools was used to test the performa
 <img src="docs/validations/404_mobile_lighthouse.png">
 </details>
 
+### Performing tests on various devices 
+The website was tested on the following devices:
+- Iphone XS
+- Ipad Pro
+- Alienware R3 15
+
+### Browser compatability
+The website was tested on the following browsers:
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Egde
+- Safari
 
