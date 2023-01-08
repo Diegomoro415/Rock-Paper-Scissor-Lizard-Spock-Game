@@ -69,7 +69,7 @@
 
 #### Returning User
 3. As a returning user, I want to play rock paper scissor game, see my results and try to improve.
-4. As a returnign user, I want to play a quiz game, see my results and try to improve.
+4. As a returning user, I want to play a quiz game, see my results and try to improve.
 5. As a returning user, I want to give feedback for ideas and improvement.
 
 #### Site Owner 
@@ -330,3 +330,45 @@ The website was tested on the following browsers:
 <img src="docs/user_testing/user_test_loser_screen.png">
 </details>
 
+4. As a returning user, I want to play a quiz game, see my results and try to improve.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Quiz Score | Display user result after answer all 15 questions | Show user's score and a try again button | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user_testing/user_test_quiz_score.png">
+</details>
+
+5. As a returning user, I want to give feedback for ideas and improvement.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Feedback Form | Top of the screen of each page contains a link to feedback page| Form that contains name, email and text area to send feedback | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user_testing/user_test_feedback_header.png">
+<img src="docs/user_testing/user_test_feedback_form.png">
+</details>
+
+6. As the site owner, I want users to be challenged by the games and always try to improve your score.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Game Page | Top of the screen of each page contains a link to game page| Rock Paper Scissor game that user can play against computer| Works as expected |
+| Quiz Page | Top of the screen of each page contains a link to quiz page| quiz game with Question and mutiple choices answer | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user_testing/user_test_game.png">
+<img src="docs/user_testing/user_test_quiz.png">
+</details>
+
+7. As the site owner, I want users to fill feedback form provide Name, email and feedback message.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Feedback Page | Top of the screen of each page contains a link to feedback page| Form that contains name, email and text area to send feedback | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user_testing/user_test_feedback.png">
+</details>
