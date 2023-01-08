@@ -118,6 +118,8 @@ The website consists of three separate pages:
 - CSS
 - JAVASCRIPT
 
+[Back to Table Of Contents](#table-of-contents)
+
 ### Frameworks & Tools
 - Bootstrap 4 cdn
 - Git
@@ -214,6 +216,8 @@ The page consists of three pages and twelve features.
 
 ![Feedback Form](docs/features/feedback_form.png)
 
+[Back to Table Of Contents](#table-of-contents)
+
 ## Validation
 
 ### HTML Validation
@@ -251,6 +255,21 @@ The WAVE WebAIM web accessibility evaluation tool was used to ensure the website
 </details>
 <details><summary>404 Error</summary>
 <img src="docs/validations/404_accessibility.png">
+</details>
+
+### Script Validation
+The JsHint, a JavaScript Code Quality tool was used to ensure the JavaScript codes contain no error. All pages pass with 0 errors.
+<details><summary>Game</summary>
+<img src="docs/validations/game_jshint.png">
+</details>
+<details><summary>Questions</summary>
+<img src="docs/validations/questions_jshint.png">
+</details>
+<details><summary>Quiz Script</summary>
+<img src="docs/validations/quizscript_jshint.png">
+</details>
+<details><summary>Contact Us</summary>
+<img src="docs/validations/contactus_jshint.png">
 </details>
 
 ### Performance 
@@ -303,6 +322,8 @@ The website was tested on the following browsers:
 <img src="docs/user_testing/user_test_game_display.png">
 <img src="docs/user_testing/user_test_game_moves.png">
 </details>
+
+[Back to Table Of Contents](#table-of-contents)
 
 2. As a first time user, I want to play a quiz game.
 
@@ -372,3 +393,41 @@ The website was tested on the following browsers:
 <details><summary>Screenshots</summary>
 <img src="docs/user_testing/user_test_feedback.png">
 </details>
+
+[Back to Table Of Contents](#table-of-contents)
+
+## Deployment
+The website was deployed using GitHub Pages by following these steps:
+1. In the GitHub repository navigate to the Settings tab
+2. On the left hand menu select Pages
+3. For the source select Branch: master
+4. After the webpage refreshes automaticaly you will se a ribbon on the top saying: "Your site is live at "https://diegomoro415.github.io/Rock-Paper-Scissor-Lizard-Spock-Game/"
+
+You can for fork the repository by following these steps:
+1. Go to the GitHub repository
+2. Click on Fork button in upper right hand corner
+
+You can clone the repository by following these steps:
+1. Go to the GitHub repository 
+2. Locate the Code button above the list of files and click it 
+3. Select if you prefere to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash
+5. Change the current working directory to the one where you want the cloned directory
+6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+7.Press Enter to create your local clone.
+
+## Credits
+
+### Media
+- [Display Background](/assets/images/background.webp): <a href= "https://www.freepik.com/premium-vector/abstract-comic-versus-background_31735852.htm">Freepik</a>
+- [404 Error](/assets/images/404img.png): <a href= "https://www.seekpng.com/ipng/u2w7e6w7t4q8y3e6_404-error-error-404-in-png/">Seekpng</a>
+
+## Code
+In order of apearance:
+- The EMAILJS for the feedback Form [feedback form - emailJs](https://www.emailjs.com/docs/sdk/installation/) 
+
+## Acknowledgements
+I would like to take the opportunity to thank:
+- My mentor Mo Shami for his feedback, advice, guidance and support.
+- My Wife Linnea Moro for her support, advice, help with testing, and for giving me some free time to work on my project.
+- To my colleagues in Code Institute Slack for sharing sharing knowlogde and give support.
