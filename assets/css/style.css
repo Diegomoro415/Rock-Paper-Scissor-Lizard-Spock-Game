@@ -135,7 +135,6 @@ header {
 .move-chose div {
     width: 100%;
     text-align: center;
-    min-height: 70px;
 }
 .move-chose div img {
     max-width: 100%;
