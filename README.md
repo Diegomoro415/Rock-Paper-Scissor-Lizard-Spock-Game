@@ -435,6 +435,8 @@ You can clone the repository by following these steps:
 
 ## Code
 
+- For Rock-Paper-Scissor instructions [Game](https://www.codigodev.com.br)
+- Question for Quiz [Quiz](https://www.mentimeter.com/)
 - The EMAILJS for the feedback Form [feedback form - emailJs](https://www.emailjs.com/docs/sdk/installation/) 
 
 ## Acknowledgements
