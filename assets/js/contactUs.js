@@ -1,7 +1,11 @@
+/*jshint esversion: 6 */
 /**
  * Email Js 
  * colletct and send data
  */
+(function(){
+    emailjs.init("r4hvSScA4b_4P_RnC");
+})();
 function sendEmail () {
     var data = {
         name: document.getElementById("name").value,
@@ -15,9 +19,9 @@ function sendEmail () {
     emailjs.send(serviceId,templateId,data)
     .then(
         res =>{
-            document.getElementById("name").value = ""
-            document.getElementById("email").value = ""
-            document.getElementById("message").value = ""
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
             console.log(res);
             alert("Message Sent!");
         }

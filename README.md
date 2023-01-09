@@ -5,7 +5,7 @@
 
 [Live webpage](https://diegomoro415.github.io/Rock-Paper-Scissor-Lizard-Spock-Game/)
 
-## Table Of Content
+## Table Of Contents
 
 1. [Project Goals](#project-goals)
     1. [User Goals](#user-goals)
