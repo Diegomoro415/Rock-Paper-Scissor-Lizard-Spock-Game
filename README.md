@@ -259,7 +259,7 @@ The WAVE WebAIM web accessibility evaluation tool was used to ensure the website
 </details>
 
 ### Script Validation
-The JsHint, a JavaScript Code Quality tool was used to ensure the JavaScript codes contain no error. All pages pass with 0 errors.
+The JsHint, a JavaScript Code Quality tool was used to ensure the JavaScript codes contain no error. All pages pass with 0 errors (for "unused variable" and "undefined variable" is  written on HTML codes).
 <details><summary>Game</summary>
 <img src="docs/validations/game_jshint.png">
 </details>
@@ -397,6 +397,16 @@ The website was tested on the following browsers:
 
 [Back to Table Of Contents](#table-of-contents)
 
+## Bugs
+
+| **Bug** | **Fix** |
+| ----------- | ----------- |
+| A uncaught console error  | Console error disappears when refresh page or while user be active playing - Error doesn't affect the page. |
+
+<details><summary>Screenshots</summary>
+<img src="docs/console_error.png">
+</details>
+
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
 1. In the GitHub repository navigate to the Settings tab
@@ -424,7 +434,7 @@ You can clone the repository by following these steps:
 - [404 Error](/assets/images/404img.png): <a href= "https://www.seekpng.com/ipng/u2w7e6w7t4q8y3e6_404-error-error-404-in-png/">Seekpng</a>
 
 ## Code
-In order of apearance:
+
 - The EMAILJS for the feedback Form [feedback form - emailJs](https://www.emailjs.com/docs/sdk/installation/) 
 
 ## Acknowledgements
